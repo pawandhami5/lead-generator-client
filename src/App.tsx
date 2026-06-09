@@ -15,7 +15,7 @@ function PublicHeader() {
   return (
     <header className="border-b">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
-        <span className="font-semibold tracking-tight">Lead Portal</span>
+        <span className="font-semibold tracking-tight">Lead Distribution Portal </span>
         <a href={adminUrl} target="_blank" rel="noopener noreferrer">
           <Button variant="outline" size="sm">
             Sign in as Admin
@@ -38,7 +38,7 @@ function AdminHeader() {
   return (
     <header className="border-b">
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
-        <span className="font-semibold tracking-tight">Lead Portal — Dashboard</span>
+        <span className="font-semibold tracking-tight">Lead Distribution Portal — Dashboard</span>
         <Button variant="outline" size="sm" onClick={handleLogout}>
           Logout
         </Button>
