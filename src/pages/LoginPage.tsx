@@ -20,7 +20,7 @@ export function LoginPage() {
     e.preventDefault()
     if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
       login()
-      navigate('/dashboard')
+      navigate('/admin/dashboard')
     } else {
       setError('Invalid credentials')
     }
