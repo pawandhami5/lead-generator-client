@@ -29,7 +29,7 @@ export function useLeadSocket(wsUrl: string) {
   }, [])
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/leads`)
+    fetch(`${import.meta.env.VITE_API_URL}/leads/`)
       .then((r) => r.json())
       .then((data: Lead[]) => setLeads(data))
       .catch(console.error)

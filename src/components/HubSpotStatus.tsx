@@ -6,7 +6,7 @@ export function HubSpotStatus() {
 
   useEffect(() => {
     const check = () => {
-      fetch(`${import.meta.env.VITE_API_URL}/hubspot/status`)
+      fetch(`${import.meta.env.VITE_API_URL}/hubspot/status/`)
         .then((r) => r.json())
         .then((data: { connected: boolean }) => setConnected(data.connected))
         .catch(() => setConnected(false))

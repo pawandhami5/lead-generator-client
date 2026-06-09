@@ -45,7 +45,7 @@ export function LeadForm() {
 
   async function onSubmit(values: LeadFormValues) {
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/leads`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/leads/`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values),
