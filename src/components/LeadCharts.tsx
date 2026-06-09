@@ -129,7 +129,7 @@ export function LeadCharts({ leads }: { leads: Lead[] }) {
                 <Tooltip
                   contentStyle={tooltipStyle}
                   wrapperStyle={{ zIndex: 9999 }}
-                  formatter={(v: number) => [`${v} leads`, '']}
+                  formatter={(v) => [`${v ?? 0} leads`, '']}
                   separator=""
                 />
               </PieChart>
@@ -180,7 +180,7 @@ export function LeadCharts({ leads }: { leads: Lead[] }) {
               <Tooltip
                 contentStyle={tooltipStyle}
                 cursor={{ fill: 'rgba(129,140,248,0.1)', radius: 6 }}
-                formatter={(v: number) => [`${v} leads`, '']}
+                formatter={(v) => [`${v ?? 0} leads`, '']}
                 separator=""
               />
               <Bar dataKey="leads" shape={<RoundedBar />} fill="#818cf8" />
@@ -223,7 +223,7 @@ export function LeadCharts({ leads }: { leads: Lead[] }) {
               <Tooltip
                 contentStyle={tooltipStyle}
                 cursor={{ fill: 'rgba(129,140,248,0.1)', radius: 6 }}
-                formatter={(v: number) => [`${v} leads`, '']}
+                formatter={(v) => [`${v ?? 0} leads`, '']}
                 separator=""
               />
               <Bar dataKey="count" shape={<RoundedBarH />}>
